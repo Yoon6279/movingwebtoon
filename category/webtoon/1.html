@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>1화 - 봄날의 기억</title>
+  <style>
+    body { margin: 0; font-family: sans-serif; background: #000; color: #fff; }
+    .cut {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      scroll-snap-align: start;
+    }
+    .scroll-container {
+      height: 100vh;
+      overflow-y: scroll;
+      scroll-snap-type: y mandatory;
+    }
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="scroll-container">
+    <div class="cut"><img src="https://i.imgur.com/V8kUVdT.jpeg" alt="컷1"></div>
+    <div class="cut"><img src="https://i.imgur.com/lUrxJ8n.jpeg" alt="컷2"></div>
+    <div class="cut"><img src="https://i.imgur.com/fy6BOM3.jpg" alt="컷3"></div>
+  </div>
+</body>
+</html>
