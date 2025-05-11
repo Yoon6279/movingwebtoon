@@ -1,36 +1,90 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>에피소드 목록</title>
   <style>
     body {
       font-family: 'Arial', sans-serif;
       background: #f9f9f9;
-      padding: 40px;
+      padding: 20px;
+      margin: 0;
     }
 
     h1 {
-      font-size: 28px;
-      margin-bottom: 30px;
+      font-size: 24px;
+      margin-bottom: 20px;
       color: #333;
+      text-align: center;
     }
 
     .episode {
       display: flex;
+      flex-direction: row;
       align-items: center;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
       background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
       overflow: hidden;
       transition: transform 0.2s;
     }
 
     .episode:hover {
-      transform: scale(1.02);
+      transform: scale(1.01);
     }
 
     .episode img {
-      width: 140px;
+      width: 150px;
       height: auto;
+      flex-shrink: 0;
+    }
+
+    .episode-info {
+      padding: 15px;
+    }
+
+    .episode-info a {
+      font-size: 18px;
+      color: #222;
+      text-decoration: none;
+    }
+
+    .episode-info a:hover {
+      text-decoration: underline;
+    }
+
+    /* 📱 모바일 대응 (화면 너비 600px 이하일 때) */
+    @media (max-width: 600px) {
+      .episode {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .episode img {
+        width: 100%;
+      }
+
+      .episode-info {
+        padding: 10px;
+      }
+
+      .episode-info a {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>📚 에피소드 목록</h1>
+
+  <div class="episode">
+    <img src="https://Yoon6279.github.io/movingwebtoon/category/yoon6279_A_low-angle_wide_shot_of_a_Korean_apartment_corridor_34b2172b-26be-41f6-a9a3-acdc1eacdbaa_3.png" alt="1화 썸네일">
+    <div class="episode-info">
+      <a href="../webtoon/1.html">1화 - 봄날의 기억</a>
+    </div>
+  </div>
+
+</body>
+</html>
