@@ -4,32 +4,33 @@
   <meta charset="UTF-8">
   <title>에피소드 목록</title>
   <style>
-    body { font-family: sans-serif; padding: 20px; }
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #f9f9f9;
+      padding: 40px;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 30px;
+      color: #333;
+    }
+
     .episode {
       display: flex;
       align-items: center;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.2s;
     }
+
+    .episode:hover {
+      transform: scale(1.02);
+    }
+
     .episode img {
-      width: 120px;
+      width: 140px;
       height: auto;
-      margin-right: 20px;
-      border-radius: 8px;
-    }
-    .episode a {
-      text-decoration: none;
-      color: #000;
-      font-size: 18px;
-    }
-  </style>
-</head>
-<body>
-  <h1>📚 에피소드 목록</h1>
-
-  <div class="episode">
-    <img src="https://i.imgur.com/V8kUVdT.jpeg" alt="1화 썸네일">
-    <a href="../webtoon/1.html">1화 - 봄날의 기억</a>
-  </div>
-
-</body>
-</html>
