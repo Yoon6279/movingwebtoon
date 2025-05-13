@@ -3,27 +3,46 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>웹툰 단일 이미지</title>
+  <title>주름 속으로</title>
   <style>
     html, body {
       margin: 0;
       padding: 0;
       background-color: #000;
+      color: #fff;
+      font-family: 'Arial', sans-serif;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 30px 20px 10px;
+      font-size: 24px;
+      font-weight: bold;
+      color: #fff;
+      letter-spacing: 2px;
+    }
+
+    .image-container {
       display: flex;
       justify-content: center;
       align-items: flex-start;
-      height: 100%;
-      overflow-x: hidden;
+      padding: 0 0 50px;
     }
 
     img {
       width: 100%;
+      max-width: 1000px;
       height: auto;
       display: block;
     }
   </style>
 </head>
 <body>
-  <img src="https://Yoon6279.github.io/movingwebtoon/category/10주차_웹툰%20레이아웃_1.png" alt="웹툰 이미지">
+  <header>주름 속으로</header>
+
+  <div class="image-container">
+    <img src="https://Yoon6279.github.io/movingwebtoon/category/10주차_웹툰%20레이아웃_1.png" alt="주름 속으로 메인 이미지">
+  </div>
 </body>
 </html>
